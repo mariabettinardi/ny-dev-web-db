@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classic News</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Classic News</h1>
+  </header>
+
+  <main>
+    <section id="featured-article" class="featured">
+    </section>
+
+    <section class="news-list">
+      <h2>Latest News</h2>
+      <div id="articles" class="articles-container">
+      </div>
+      <button id="load-articles">Load Articles</button>
+      <button id="send-to-back">Send Articles to Back</button>
+      <button id="list-saved">Listar artigos salvos</button>
+    </section>
+  </main>
+
+  <section id="saved-articles" style="display:none;">
+    <h2>Artigos Salvos</h2>
+    <div id="saved-container" class="articles-container"></div>
+  </section>
+
+  <section id="edit-article" style="display:none;">
+    <h2>Editar Artigo</h2>
+    <form id="edit-form" data-id="">
+      <label for="article-title">Título:</label>
+      <input type="text" id="article-title" name="title" required />
+      <label for="article-content">Conteúdo:</label>
+      <textarea id="article-content" name="content" required></textarea>
+      <button type="submit">Salvar Alterações</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Classic News. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
